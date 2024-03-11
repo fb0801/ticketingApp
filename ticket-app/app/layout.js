@@ -2,6 +2,10 @@ import Nav from './(components)/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+import { Config } from '@fortawesome/free-solid-svg-core'
+import "@fortawesome/fontawesome-svg-core/style.css"
+config.autoAddCss = False
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -13,8 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <div className='flex flex-col h-screen max-h-screen'> 
         <Nav />
-        {children}</body>
+        <div className='flex-grow overflow-auto bg-page text-default-text'> {children}</div>
+        </div>
+       </body>
     </html>
   )
 }
