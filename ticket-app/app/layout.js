@@ -2,9 +2,10 @@ import Nav from './(components)/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-import { Config } from '@fortawesome/free-solid-svg-core'
-import "@fortawesome/fontawesome-svg-core/style.css"
-config.autoAddCss = False
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] })
 
