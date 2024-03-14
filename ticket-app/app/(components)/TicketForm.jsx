@@ -10,8 +10,8 @@ const TicketForm = () => {
     const value = e.target.value;
     const name = e.target.name;
 
-    setFormData((preState) => ({
-      ...preState,
+    setFormData((prevState) => ({
+      ...prevState,
       [name]: value,
     }));
   };
