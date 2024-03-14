@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 
 
 const TicketForm = () => {
+  const router = useRouter()
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -15,9 +16,9 @@ const TicketForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => { 
+  const handleSubmit = async (e) => { 
     e.preventDefault()
-    const res = await fetch('api/Tickets', {
+    const res = await fetch("/api/Tickets", {
       method: "POST",
       body: JSON.stringify({formData}),
       "content-type": "application/json"
@@ -26,6 +27,8 @@ const TicketForm = () => {
     if(!res.ok){
       throw new Error("failed to create ticket")
     }
+    router.refresh()
+    router.push("/")
   }
 
     const startingTicketData = {
