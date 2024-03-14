@@ -14,3 +14,6 @@ original repo -> https://github.com/ClarityCoders/Ticket-Tutorial-App
 
 
 https://stackoverflow.com/questions/69797985/all-charts-apps-need-to-be-terminated-before-the-project-can-be-deleted
+
+
+https://www.mongodb.com/
