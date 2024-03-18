@@ -1,12 +1,13 @@
 "use client";
-import React, { useState } from "react";
+
 import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 
 
 const TicketForm = () => {
-  const router = useRouter()
+const router = useRouter()
 
-  const handleChange = (e) => {
+const handleChange = (e) => {
     const value = e.target.value;
     const name = e.target.name;
 
