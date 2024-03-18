@@ -17,3 +17,8 @@ https://stackoverflow.com/questions/69797985/all-charts-apps-need-to-be-terminat
 
 
 https://www.mongodb.com/
+
+
+https://www.youtube.com/watch?v=nwgQzuRRgec
+
+https://docs.fontawesome.com/v5/web/use-with/react
