@@ -10,6 +10,7 @@ export async function POST(req) {
 
     await Ticket.create(ticketData);
 
+    console.log('sent')
     return NextResponse.json({ message: "Ticket Created" }, { status: 201 });
   } catch (err) {
     console.log(err);
