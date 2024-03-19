@@ -30,7 +30,7 @@ const TicketPage = async ({ params }) => {
     };
   }
 
-  return <EditTicketForm ticket={updateTicketData} />;
+  return <TicketForm ticket={updateTicketData} />;
 };
 
 export default TicketPage;
